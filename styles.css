@@ -1,0 +1,129 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e5e5e5; /* Light background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Main stopwatch container styling */
+  .stopwatch-container {
+    text-align: center;
+    background-color: #fff; /* White background for the container */
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    width: 320px;
+    border: 2px solid #ff6f61; /* Pinkish border color */
+  }
+  
+  /* Title styling */
+  h1 {
+    font-size: 36px;
+    color: #ff6f61; /* Pink color */
+    margin-bottom: 20px;
+  }
+  
+  /* Stopwatch time display styling */
+  .time-display {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333; /* Dark gray color */
+    margin-bottom: 30px;
+  }
+  
+  /* Buttons container styling */
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  /* Button styling */
+  .buttons button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  #startStopBtn {
+    background-color: #28a745; /* Green for start button */
+    color: white;
+  }
+  
+  #startStopBtn:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05);
+  }
+  
+  #resetBtn {
+    background-color: #dc3545; /* Red for reset button */
+    color: white;
+  }
+  
+  #resetBtn:hover {
+    background-color: #c82333; /* Darker red on hover */
+    transform: scale(1.05);
+  }
+  
+  #lapBtn {
+    background-color: #007bff; /* Blue for lap button */
+    color: white;
+  }
+  
+  #lapBtn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05);
+  }
+  
+  /* Lap times section styling */
+  .lap-times {
+    margin-top: 30px;
+    text-align: left;
+  }
+  
+  .lap-times h2 {
+    font-size: 20px;
+    color: #444; /* Dark gray for lap section header */
+  }
+  
+  .lap-times ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .lap-times li {
+    padding: 8px;
+    font-size: 16px;
+    color: #333; /* Dark gray text color */
+    border-bottom: 1px solid #f1f1f1; /* Light separator line */
+    background-color: #f9f9f9; /* Light background for each lap */
+    transition: background-color 0.3s;
+  }
+  
+  .lap-times li:hover {
+    background-color: #f1f1f1; /* Slight darkening on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 480px) {
+    .stopwatch-container {
+      width: 280px; /* Smaller width for mobile */
+      padding: 25px;
+    }
+    
+    .time-display {
+      font-size: 40px; /* Adjust time font size for mobile */
+    }
+  
+    .buttons button {
+      font-size: 16px; /* Adjust button font size for mobile */
+    }
+  }
+  
